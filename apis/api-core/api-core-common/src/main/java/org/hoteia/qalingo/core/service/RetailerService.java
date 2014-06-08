@@ -52,7 +52,7 @@ public interface RetailerService {
 	
 	String buildRetailerLogoFilePath(Retailer retailer, String logo);
 	
-	String buildRetailerLogoWebPath(String logo) throws Exception;
+	String buildRetailerLogoWebPath(String retailerCode, String logo) throws Exception;
 	
     // RETAILER COMMENT/RATE
 	

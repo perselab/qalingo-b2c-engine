@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang.StringUtils;
+import org.hoteia.qalingo.core.Constants;
 import org.hoteia.qalingo.core.dao.RetailerDao;
 import org.hoteia.qalingo.core.domain.EngineSetting;
 import org.hoteia.qalingo.core.domain.Retailer;
@@ -118,19 +120,25 @@ public class RetailerServiceImpl implements RetailerService {
           if (!retailerLogoFilePath.startsWith("/")) {
               retailerLogoFilePath = "/" + retailerLogoFilePath;
           }
-          String absoluteFolderPath = new StringBuilder(assetfileRootPath).append(retailerLogoFilePath).append("/retailer-logo/").append(retailer.getCode()).append("/").toString();
+          String absoluteFolderPath = new StringBuilder(assetfileRootPath).append(retailerLogoFilePath).append(Constants.RETAILER_LOGO_PATH).append(retailer.getCode()).append("/").toString();
           String absoluteFilePath = new StringBuilder(absoluteFolderPath).append(logo).toString();
           return FilenameUtils.separatorsToSystem(absoluteFilePath);
     }
     
-    public String buildRetailerLogoWebPath(final String logo) throws Exception {
+    public String buildRetailerLogoWebPath(final String retailerCode, final String logo) throws Exception {
+    	if(StringUtils.isBlank(logo)){
+    		return null;
+    	}
+    	
         EngineSetting engineSetting = engineSettingService.getAssetRetailerAndStoreFilePath();
         String prefixPath = "";
         if (engineSetting != null) {
             prefixPath = engineSetting.getDefaultValue();
         }
-        String retailerLogoWebPathPrefix = buildRootAssetWebPath() + prefixPath + "/retailer-logo/";
-        String retailerLogoWebPath = retailerLogoWebPathPrefix + logo;
+        String retailerLogoWebPath = new StringBuilder(buildRootAssetWebPath())
+        									.append(prefixPath).append(Constants.RETAILER_LOGO_PATH)
+        									.append(retailerCode).append(System.getProperty("file.separator"))
+        									.append(logo).toString();
         return retailerLogoWebPath;
     }
     

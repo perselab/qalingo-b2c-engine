@@ -735,7 +735,7 @@ public class ViewBeanFactory extends AbstractViewBeanFactory {
         retailerViewBean.setEcommerce(retailer.isEcommerce());
         retailerViewBean.setCorner(retailer.isCorner());
 
-        String logo = retailerService.buildRetailerLogoWebPath(retailer.getLogo());
+        String logo = retailerService.buildRetailerLogoWebPath(retailer.getCode(), retailer.getLogo());
         retailerViewBean.setImg(logo);
         
         if (Hibernate.isInitialized(retailer.getAddresses()) 

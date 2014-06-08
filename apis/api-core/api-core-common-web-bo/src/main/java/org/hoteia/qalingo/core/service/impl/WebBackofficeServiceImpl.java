@@ -563,7 +563,10 @@ public class WebBackofficeServiceImpl implements WebBackofficeService {
         MultipartFile multipartFile = retailerForm.getFile();
         if (multipartFile.getSize() > 0) {
             UUID uuid = UUID.randomUUID();
-            String pathRetailerLogoImage = new StringBuilder(uuid.toString()).append(System.getProperty ("file.separator")).append(FilenameUtils.getExtension(multipartFile.getOriginalFilename())).toString();
+            String pathRetailerLogoImage = new StringBuilder(uuid.toString())
+            									.append(".")
+            									.append(FilenameUtils.getExtension(multipartFile.getOriginalFilename()))
+            									.toString();
 
             String absoluteFilePath = retailerService.buildRetailerLogoFilePath(retailer, pathRetailerLogoImage);
             String absoluteFolderPath = absoluteFilePath.replace(pathRetailerLogoImage, "");

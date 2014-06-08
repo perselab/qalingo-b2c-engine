@@ -495,6 +495,10 @@ public enum BoUrls {
     public static final String ERROR_404_URL            = "/404.html";
     public static final String ERROR_404_VELOCITY_PAGE  = "error/error-404";
     
+    public static final String ERROR_CUSTOM_KEY = "error-custom";
+    public static final String ERROR_CUSTOM_URL = "/error.html";
+    public static final String ERROR_CUSTOM_VELOCITY_PAGE = "error/error-custom";
+    
     public static final String VELOCITY_CACHE_KEY           = "flush-cache-ihm";
     public static final String VELOCITY_CACHE_URL           = "/flush-cache-ihm.html";
     public static final String VELOCITY_CACHE_PAGE          = "tools/flush-cache-ihm";

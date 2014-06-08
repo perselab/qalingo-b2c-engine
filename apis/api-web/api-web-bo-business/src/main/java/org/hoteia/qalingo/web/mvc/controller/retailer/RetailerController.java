@@ -18,6 +18,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
@@ -48,16 +49,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.ServletRequestDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 
  */
 @Controller("retailerController")
-public class RetailerController extends AbstractBusinessBackofficeController {
+public class RetailerController extends AbstractBusinessBackofficeController{
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -68,6 +74,15 @@ public class RetailerController extends AbstractBusinessBackofficeController {
 	
 	@Autowired
 	private WarehouseService warehouseService;
+	
+	@InitBinder
+	protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder)
+        throws ServletException {
+        // to actually be able to convert Multipart instance to byte[]
+        // we have to register a custom editor
+        binder.registerCustomEditor(byte[].class, new ByteArrayMultipartFileEditor());
+        // now Spring knows how to handle multipart object and convert them
+    }
 
 	@RequestMapping(value = BoUrls.RETAILER_LIST_URL, method = RequestMethod.GET)
 	public ModelAndView retailerList(final HttpServletRequest request, final Model model) throws Exception {
