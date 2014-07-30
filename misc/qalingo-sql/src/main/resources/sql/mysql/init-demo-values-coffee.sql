@@ -2141,7 +2141,7 @@ INSERT INTO teco_asset
 (10030, 'image ...', 'cat-1-img-1.jpg', 0, 'image 7', 1, 'BACKGROUND', null, 1, 30, 'MASTER_CATEGORY'), 
 (10040, 'image ...', 'cat-1-img-1.jpg', 0, 'image 8', 1, 'BACKGROUND', null, 1, 40, 'MASTER_CATEGORY'), 
 (10050, 'image ...', 'cat-1-img-1.jpg', 0, 'image 9', 1, 'BACKGROUND', null, 1, 50, 'MASTER_CATEGORY'),
-(10110, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 10, 'MASTER_CATEGORY'), 
+(10110, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 10, 'MASTER_CATEGORY'), 
 (10120, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 20, 'MASTER_CATEGORY'), 
 (10130, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 30, 'MASTER_CATEGORY'), 
 (10140, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 40, 'MASTER_CATEGORY'),
@@ -2162,7 +2162,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(1011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 1010, 'VIRTUAL_CATEGORY'), 
+(1011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 1010, 'VIRTUAL_CATEGORY'), 
 (1011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 1020, 'VIRTUAL_CATEGORY'), 
 (1011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 1030, 'VIRTUAL_CATEGORY'), 
 (1011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 1040, 'VIRTUAL_CATEGORY'),
@@ -2199,7 +2199,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(2011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 2010, 'VIRTUAL_CATEGORY'), 
+(2011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 2010, 'VIRTUAL_CATEGORY'), 
 (2011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 2020, 'VIRTUAL_CATEGORY'), 
 (2011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 2030, 'VIRTUAL_CATEGORY'), 
 (2011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 2040, 'VIRTUAL_CATEGORY'),
@@ -2236,7 +2236,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(3011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 3010, 'VIRTUAL_CATEGORY'), 
+(3011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 3010, 'VIRTUAL_CATEGORY'), 
 (3011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 3020, 'VIRTUAL_CATEGORY'), 
 (3011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 3030, 'VIRTUAL_CATEGORY'), 
 (3011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 3040, 'VIRTUAL_CATEGORY'),
@@ -2273,7 +2273,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(4011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 4010, 'VIRTUAL_CATEGORY'), 
+(4011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 4010, 'VIRTUAL_CATEGORY'), 
 (4011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 4020, 'VIRTUAL_CATEGORY'), 
 (4011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 4030, 'VIRTUAL_CATEGORY'), 
 (4011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 4040, 'VIRTUAL_CATEGORY'),
@@ -2310,7 +2310,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(5011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 5010, 'VIRTUAL_CATEGORY'), 
+(5011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 5010, 'VIRTUAL_CATEGORY'), 
 (5011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 5020, 'VIRTUAL_CATEGORY'), 
 (5011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 5030, 'VIRTUAL_CATEGORY'), 
 (5011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 5040, 'VIRTUAL_CATEGORY'),
@@ -2347,7 +2347,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(6011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 6010, 'VIRTUAL_CATEGORY'), 
+(6011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 6010, 'VIRTUAL_CATEGORY'), 
 (6011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 6020, 'VIRTUAL_CATEGORY'), 
 (6011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 6030, 'VIRTUAL_CATEGORY'), 
 (6011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 6040, 'VIRTUAL_CATEGORY'),
@@ -2384,7 +2384,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(7011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 7010, 'VIRTUAL_CATEGORY'), 
+(7011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 7010, 'VIRTUAL_CATEGORY'), 
 (7011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 7020, 'VIRTUAL_CATEGORY'), 
 (7011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 7030, 'VIRTUAL_CATEGORY'), 
 (7011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 7040, 'VIRTUAL_CATEGORY'),
@@ -2421,7 +2421,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(8011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 8010, 'VIRTUAL_CATEGORY'), 
+(8011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 8010, 'VIRTUAL_CATEGORY'), 
 (8011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 8020, 'VIRTUAL_CATEGORY'), 
 (8011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 8030, 'VIRTUAL_CATEGORY'), 
 (8011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 8040, 'VIRTUAL_CATEGORY'),
@@ -2458,7 +2458,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(9011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 9010, 'VIRTUAL_CATEGORY'), 
+(9011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 9010, 'VIRTUAL_CATEGORY'), 
 (9011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 9020, 'VIRTUAL_CATEGORY'), 
 (9011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 9030, 'VIRTUAL_CATEGORY'), 
 (9011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 9040, 'VIRTUAL_CATEGORY'),
@@ -2495,7 +2495,7 @@ INSERT INTO teco_asset
 INSERT INTO teco_asset  
 (id, description, path, is_default, name, version, type, size, is_global, virtual_category_id, scope)
  VALUES 
-(10011010, 'image ...', 'cat-1-img-1-small.png', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 10010, 'VIRTUAL_CATEGORY'), 
+(10011010, 'image ...', 'cat-1-img-1-small.jpg', 1, 'image 10', 1, 'PACKSHOT', 'SMALL', 1, 10010, 'VIRTUAL_CATEGORY'), 
 (10011020, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 11', 1, 'PACKSHOT', 'SMALL', 1, 10020, 'VIRTUAL_CATEGORY'), 
 (10011030, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 12', 1, 'PACKSHOT', 'SMALL', 1, 10030, 'VIRTUAL_CATEGORY'), 
 (10011040, 'image ...', 'cat-1-img-1-small.jpg', 0, 'image 13', 1, 'PACKSHOT', 'SMALL', 1, 10040, 'VIRTUAL_CATEGORY'),
